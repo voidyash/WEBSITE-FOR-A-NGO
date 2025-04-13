@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bright Future Trust</title>
+
+    <script>
+      function loginPage() {
+          window.location.href = 'login.html';
+      }
+  </script>
+</head>
+<body style="background-color: #a7f1f1;">
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">BrightFutureTrust</span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a href = "/index.html" class="mr-5 hover:text-gray-900">Home</a>
+            <a href = "/about.html" class="mr-5 hover:text-gray-900">About</a>
+            <a href = "/services.html" class="mr-5 hover:text-gray-900">Services</a>
+            <!-- <a href = "/contact.html" class="mr-5 hover:text-gray-900">Contact</a> -->
+            <a href = "/donation.html" class="mr-5 hover:text-gray-900">Donation</a>
+          </nav>
+          <button class="inline-flex items-center bg-red-100 border-0 py-1 px-3 focus:outline-none hover:bg-red-200 rounded text-base mt-4 md:mt-0" onclick="loginPage()">Login(for office staff only)
+            <svg fill="none" stroke="blue" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <section class="text-gray-600 body-font relative">
+        <div class="absolute inset-0 bg-gray-300">
+          <iframe width="100%" height="200%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d270.49968284773286!2d86.29044034600953!3d24.192927142077345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f15574141c52e5%3A0x60a2d8ca78b0ac0!2sVIKRAMADITYA%20CLASSES%20(Alkapuri%20Branch)!5e0!3m2!1sen!2sin!4v1718778415079!5m2!1sen!2sin" style="filter: grayscale(1) contrast(1.2) opacity(1);"></iframe>
+        </div>
+        <div class="container px-5 py-24 mx-auto flex">
+          <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+            <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">To contact:-</h2>
+            <p class="leading-relaxed mb-5 text-gray-600">Phone number:- </p>
+          </div>
+        </div>
+      </section>
+</body>
+</html>

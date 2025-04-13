@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bright Future Trust</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Login & Registration</title>
+</head>
+<body style="background-color: #aadfb1;">
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">BrightFutureTrust</span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a href = "/index.html" class="mr-5 hover:text-gray-900">Home</a>
+            <a href = "/about.html" class="mr-5 hover:text-gray-900">About</a>
+            <a href = "/services.html" class="mr-5 hover:text-gray-900">Services</a>
+            <!-- <a href = "/contact.html" class="mr-5 hover:text-gray-900">Contact</a> -->
+            <a href = "/donation.html" class="mr-5 hover:text-gray-900">Donation</a>
+          </nav>
+        </div>
+      </header>
+
+      <title>Login Page</title>
+    <style>
+        /* CSS for the title */
+        .center-title {
+            text-align: center;
+            color: #097c13;
+            font-size: 25px; /* Change this value to adjust title size */
+            margin: 15px;
+        }
+        /* CSS for the body */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        /* CSS for the form container */
+        .login-form {
+            text-align: center;
+            margin-top: 50px;
+        }
+        /* CSS for the labels */
+        label {
+            font-size: 38px; /* Change this value to adjust label size */
+            color:rgb(78, 8, 23)
+        }
+        /* CSS for the input fields */
+        input[type="text"], input[type="password"] {
+            font-size: 16px; /* Change this value to adjust input text size */
+            padding: 10px;
+            margin: 5px;
+            width: 400px;
+        }
+        /* CSS for the submit button */
+        input[type="submit"] {
+            font-size: 20px; /* Change this value to adjust button text size */
+            padding: 10px 20px;
+            margin: 5px;
+            color: #099e22
+        }
+    </style>
+    <script>
+        function validateLogin() {
+            var userId = document.getElementById("user_id").value;
+            var password = document.getElementById("password").value;
+
+            // Hardcoded user IDs and passwords
+            var users = {
+                "user1": "password1",
+                "user2": "password2",
+                "admin": "admin123"
+            };
+
+            // Check if the user ID exists and the password matches
+            if (users[userId] && users[userId] === password) {
+                alert("Login successful!");
+                // Redirect to another page or perform some action
+                return true;
+            } else {
+                alert("Invalid user ID or password");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2 class="center-title">Login Page</h2>
+    <div class="login-form">
+        <form onsubmit="return validateLogin()">
+            <label for="user_id">User ID:</label><br>
+            <input type="text" id="user_id" name="user_id" required><br><br>
+            
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+</body>
+</html>
